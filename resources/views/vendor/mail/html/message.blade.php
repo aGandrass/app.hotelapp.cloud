@@ -21,7 +21,7 @@
     {{-- Footer --}}
     @slot('footer')
         @component('mail::footer')
-            &copy; {{ date('Y') }} Steigenberger Golf & Spa Resort. All rights reserved.
+            &copy; {{ date('Y') }} Steigenberger Hotel & Resort. All rights reserved.
         @endcomponent
     @endslot
 @endcomponent
