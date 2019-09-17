@@ -1,6 +1,6 @@
 @component('mail::message')
 @component('mail::promotion')
-<img src="{{ asset('images/Steigenberger_Logo.jpg') }}" alt="Steigenberger Mallorca" width="300px"/>
+<img src="{{ asset('/images/Steigenberger_Logo.jpg') }}" alt="Steigenberger Mallorca" width="300px"/>
 @endcomponent
 # Kostenübernahme - Steigenberger Hotel & Resort
 {{ $mailContent['contentSalutation'] }} {{ $mailContent['contentTitle'] }} {{ $mailContent['contentFirstname'] }} {{ $mailContent['contentLastname'] }},<br>
