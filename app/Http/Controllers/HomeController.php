@@ -390,14 +390,13 @@ class HomeController extends Controller
             ]);
       /* SEND INVITATION MAIL TO CLIENT */
       $clientMail = request('showEmail');
-      $salutation = \DB::table('salutations')->where('salutationID', $request->_salutation)->first();
-
+      $salutation = \DB::table('salutations')->where('salutationID', request('showSalutation'))->first();
       $mailContent = [
         'contentLang'       => request('showLanguage'),
         'contentTitle'      => request('showTitle'),
-        'contentSalutation' => $request->salutation,
-        'contentFirstname'  => request('showFirstname'),
-        'contentLastname'   => request('showLastname'),
+        'contentSalutation' => $salutation->salutation,
+        'contentFirstname'  => request('showRealFirstname'),
+        'contentLastname'   => request('showRealLastname'),
         'contentlink'       => request('showLink'),
         'contentType'       => request('showType'),
       ];

@@ -197,6 +197,8 @@
           <input type="hidden" name="showEmail" id="showEmail" value="">
           <input type="hidden" name="showLanguage" id="showLanguage" value="">
           <input type="hidden" name="showType" id="showType" value="">
+          <input type="hidden" name="showRealFirstname" id="showRealFirstname" value="">
+          <input type="hidden" name="showRealLastname" id="showRealLastname" value="">
           <input type="submit" class="btn btn-primary" id="submitResendButton" value="Yes, resend">
         </div>
       </div>
@@ -385,7 +387,8 @@
     modal.find('.modal-footer input[name=showEmail]').val(email)
     modal.find('.modal-footer input[name=showLanguage]').val(language)
     modal.find('.modal-footer input[name=showType]').val(type)
-
+    modal.find('.modal-footer input[name=showRealFirstname]').val(firstname)
+    modal.find('.modal-footer input[name=showRealLastname]').val(lastname)
     modal.find('.modal-body input[name=showFirstname]').val(firstname)
     modal.find('.modal-body input[name=showLastname]').val(lastname)
     modal.find('.modal-body input[name=showTotal]').val(total)

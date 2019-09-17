@@ -33,20 +33,20 @@ class PaymentInvitation extends Mailable
             switch ($this->mailContent['contentLang'])
             {
                 case "de":
-                return $this->subject('Ihr Urlaub im Steigenberger Golf & Spa Resort')
-                    ->markdown('emails.payment-invitation-de')
+                return $this->subject('Ihr Urlaub im Steigenberger Hotel & Resort')
+                    ->markdown('emails.payment-invitation-de-new')
                     ->with('mailContent', $this->mailContent);
                 break;
 
                 case "en":
-                return $this->subject('Your holiday at the Steigenberger Golf & Spa Resort')
-                    ->markdown('emails.payment-invitation-en')
+                return $this->subject('Your holiday at the Steigenberger Hotel & Resort')
+                    ->markdown('emails.payment-invitation-en-new')
                     ->with('mailContent', $this->mailContent);
                 break;
 
                 case "es":
-                return $this->subject('Sus vacaciones en el hotel Steigenberger Golf & Spa Resort')
-                    ->markdown('emails.payment-invitation-es')
+                return $this->subject('Sus vacaciones en el hotel Steigenberger Hotel & Resort')
+                    ->markdown('emails.payment-invitation-es-new')
                     ->with('mailContent', $this->mailContent);
                 break;
             }
@@ -56,20 +56,20 @@ class PaymentInvitation extends Mailable
             switch ($this->mailContent['contentLang'])
             {
                 case "de":
-                return $this->subject('Kostenübernahme - Steigenberger Golf & Spa Resort')
-                    ->markdown('emails.authorization-de')
+                return $this->subject('Kostenübernahme - Steigenberger Hotel & Resort')
+                    ->markdown('emails.authorization-de-new')
                     ->with('mailContent', $this->mailContent);
                 break;
 
                 case "en":
-                return $this->subject('Cost assumption declaration - Steigenberger Golf & Spa Resort')
-                    ->markdown('emails.authorization-en')
+                return $this->subject('Cost assumption declaration - Steigenberger Hotel & Resort')
+                    ->markdown('emails.authorization-en-new')
                     ->with('mailContent', $this->mailContent);
                 break;
 
                 case "es":
-                return $this->subject('Declaración de garantía de costes - Steigenberger Golf & Spa Resort')
-                    ->markdown('emails.authorization-es')
+                return $this->subject('Declaración de garantía de costes - Steigenberger Hotel & Resort')
+                    ->markdown('emails.authorization-es-new')
                     ->with('mailContent', $this->mailContent);
                 break;
             }

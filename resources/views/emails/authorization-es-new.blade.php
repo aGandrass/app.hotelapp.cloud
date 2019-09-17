@@ -2,15 +2,15 @@
 @component('mail::promotion')
 <img src="{{ asset('images/Steigenberger_Logo.jpg') }}" alt="Steigenberger Mallorca" width="300px"/>
 @endcomponent
-# Kostenübernahme - Steigenberger Hotel & Resort
+# Declaración de garantía de costes - Steigenberger Hotel & Resort
 {{ $mailContent['contentSalutation'] }} {{ $mailContent['contentTitle'] }} {{ $mailContent['contentFirstname'] }} {{ $mailContent['contentLastname'] }},<br>
-wir bedanken uns für Ihre Anfrage.<br>
-Damit wir Ihren Wünschen gerecht werden können, klicken Sie bitte auf den Button, um den offenen Rechnungsbetrag zu begleichen.<br>
+le agradecemos su consulta.<br>
+Para poder atender su deseo correctamente, haga clic en el botón y así liquidar la cantidad pendiente de pago.<br>
 
 @component('mail::button', ['url' => $mailContent['contentlink']])
-Jetzt Zahlung vornehmen
+Realizar el pago ahora
 @endcomponent
 
-Für Wünsche oder Fragen stehen wir Ihnen jederzeit<br>gerne zur Verfügung,<br>
-Ihr Steigenberger-Team
+Para atender cualquier otra consulta o deseo estamos a su disposición.<br>
+El equipo de Steigenberger
 @endcomponent
